@@ -1,0 +1,189 @@
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,form,hr,fieldset,h1,h2,h3,h4,h5,h6,img,input,form{
+	margin:0;
+	padding:0;
+}
+body{
+    font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
+    background: #282d2f;
+
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border: 0;
+	display: block;
+}
+.header{
+    height: 56px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    background: #2f3638;
+    .left{
+        float: left;
+        text-align: center;
+        width: 240px;
+        height: 57px;
+        background: #282d2f;
+        img{
+            width: 170px;
+            margin: 12px auto;
+        }
+    }
+    .right{
+        height: 56px;
+        float: left;
+        background: #2f3638;
+        flex:1;
+        font-size:14px;
+        display: flex;
+        justify-content: space-between;
+        .list-button{
+            width: 67px;
+            height: 55px;
+            border-right: 1px solid #282d2f;
+            font-size: 22px;
+            color: #cfcfcf;  
+            text-align: center;
+            line-height: 56px; 
+            float: left;    
+        }
+        .search-box{
+            float: left;
+            padding-top:18px;
+            button{
+                border: 0;
+                color:#848c90;
+                background: #2f3638;
+                margin-right: -5px;
+                vertical-align: middle;
+            }
+            input{
+                border: 0;
+                color: #757575;
+                background: #2f3638;
+            }
+        }
+        .navbar{
+           
+            li{
+                float: left;
+                a{
+                    line-height: 56px;
+                    display: block;
+                    padding: 0 16px;
+                    position: relative;
+                    color:#cfcfcf;
+
+                }
+            }
+        }
+    }
+}
+
+.section{
+    display: flex;
+   .common{
+    width: 240px;
+    background: #282d2f;
+    height: 100%;
+    float: left;
+    .use-panel{
+        background: #1f2224;
+        border-bottom: 1px solid #1f2224;
+        padding: 22px;
+        padding-top: 28px;
+        .use-content{
+            width: 196px;
+            height: 139px;
+            .picture{
+                border-radius: 50%;
+                width: 82px;
+                height: 82px;
+                margin-bottom: 10px;
+                overflow: hidden;
+                img{
+                    width: 82px;
+                    height: 82px;
+                }
+            }
+            .p1{
+                font-size: 14px;
+                color: #cfcfcf;
+               span{
+                   padding-right: 8px;
+                .iconfont{
+                    color:#44b95e;
+                    font-size: 12px;
+               }
+               }
+            }
+            a{
+                color:#6d787c;
+                font-size: 12px;
+                &:hover{
+                    color: #a2aaad;
+                }
+            }
+         }
+      }
+      ul{
+          .first{
+            padding: 24px 17px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #fff;
+            span{
+                font-size: 12px;
+                color: #868E8E;
+                padding-left: 10px;
+            }
+          }
+          .index{
+              background: #1f2224;
+              a{
+                  color:#fff;
+              }             
+          }
+          .hide{
+              display: none;
+          }
+          .hide1{
+            a{
+                padding-left: 42px;
+              }
+          }
+          li{
+              .icon-xiangxiajiantou{
+                  float: right;
+              }
+            a{
+                display: block;
+                color: #868E8E;
+                padding: 13px 17px;
+                border-left: #282d2f 3px solid;
+                font-size: 14px;
+                cursor: pointer;
+                .iconfont{
+                    margin-right: 8px;
+                    width: 20px;
+                    font-size: 16px
+                }
+                &:hover{
+                    background: #232829;
+                    color: #fff;
+                }
+                .active{
+                    background: #232829;
+                    color: #fff;
+                }
+            }
+          }
+
+      }
+   }
+}

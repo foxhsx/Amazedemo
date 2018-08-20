@@ -1,0 +1,123 @@
+.right-wrapper{
+    background: #3a4144;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    flex:1;
+    z-index: 1101;
+    min-height: 922px;
+    border-bottom-left-radius: 3px;
+    .set{
+        height:58px;
+        background: #424b4f;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 40px 0;
+        border-bottom: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        .set-left{
+            width: 75%;
+            padding-left: 10px;
+            padding-right: 10px;   
+           .set-head{
+               float:left;
+                .set-excel{
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: #fff;
+                }
+            .ui{
+                font-weight: normal;
+                line-height: 1;
+                color: #B3B3B3;
+                font-size:80%;
+            }
+            .use{
+                color: #e6e6e6;
+                margin-top: 4px;
+                margin-bottom: 0;
+                font-size: 14px;
+                a {
+                    color: #0e90d2;
+                }
+            }
+        }
+      }
+       .set-right{
+           float:right;
+           padding-left: 10px;
+           padding-right: 10px;
+           width: 25%;
+           .seting{
+               transition: all 0.4s ease-in-out;
+               opacity: 0.3;
+               float: right;
+               outline: none;
+               border: 1px solid #fff;
+               padding: 16px 36px;
+               font-size: 23px;
+               line-height: 23px;
+               border-radius: 0;
+               padding-top: 14px;
+               color: #fff;
+               background-color: rgba(0, 0, 0, 0);
+               font-weight: 500;
+               vertical-align: middle;
+               span{
+                position: fixed;
+                right: 0;
+                top:75px;
+                color: rgb(150,154,155);
+                padding: 2px 12px;
+                background: rgb(20,22,23);
+            }
+               &:hover{
+                background-color: #ffffff;
+                color: #333;
+                opacity: 1;
+               }
+           }
+       }
+    }
+    .chart-center{
+        padding: 20px;
+        .widget {
+            width: 100%;
+            min-height: 148px;
+            margin-bottom: 20px;
+            border-radius: 0;
+            position: relative;
+            border: 1px solid #33393c;
+            border-top: 2px solid #313639;
+            background: #4b5357;
+            color: #ffffff;
+            .widget-head {
+                width: 100%;
+                padding: 15px;
+                border-bottom: 1px solid #3f4649;
+                .widget-title {
+                    font-size: 14px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }   
+}
+//响应式效果媒体查询
+@media screen and (max-width:980px){
+    .right-wrapper{
+        margin-left:0;
+    };
+    .common{
+     display: none;
+    }
+ }
+ @media screen and (max-width:640px){
+    .right-wrapper{
+        margin-left:0;
+    };
+    .chart-center{
+       width:100%;
+    
+    }
+ }

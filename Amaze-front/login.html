@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登陆</title>
+    <style>
+        /* .success
+        {
+            background-color:#E6FEE4;
+            border-color:#01BE00;
+            background-repeat: no-repeat;
+            background-position: left 2px;
+            padding:0 18px;
+        }
+        .danger
+        {
+            background-color:#FFF2E5;
+            border-color:#FF3300;
+            background-repeat: no-repeat;
+            background-position: left 2px;
+            padding:0 18px;
+        } */
+        .nav
+        {
+            width: 650px;
+            margin: 120px auto;
+        }
+        .nav1
+        {
+            border: 1px solid #666666;
+            border-radius: 5px;
+        }
+        i
+        {
+            font-size: 12px;
+            color: #999999;
+        }
+        span{
+            height: 14px;
+        }
+      
+      
+        button
+        {
+            width: 300px;
+            height: 36px;
+            line-height: 36px;
+            border: 1px solid #b5b5b5;
+            background-color: transparent;
+            cursor: pointer;
+            text-align: center;
+            margin: 20px 0;
+            color:#fff;
+            font-size:20px;
+            opacity: .7;
+        }
+        button:hover{
+            background: #b5b5b5;
+        }
+        input{
+            color:#fff;
+            text-indent:15px;
+            height: 30px;
+            width: 100%;
+            float: right;
+            background: 0 0;
+            border: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+           
+        }
+    </style>
+</head>
+<body class="theme-black">
+    <div class="am-g tpl-g">
+        <!-- 风格切换 -->
+        <div class="tpl-skiner">
+            <div class="tpl-skiner-toggle am-icon-cog">
+            </div>
+            <div class="tpl-skiner-content">
+                <!-- <div class="tpl-skiner-content-title">
+                    选择主题
+                </div> -->
+                
+            </div>
+        </div>
+        <div class="tpl-login">
+            <div class="tpl-login-content">
+                <div class="tpl-login-logo">
+                </div>
+                <form action="index.html" method="post">
+                   
+                        <input type="text" placeholder="请输入手机号"   id="userName" size="13px"><i></i>
+                        <span ></span>
+                        <label for="passWord"  style="color: #fff;"></label>
+                        <input type="password" id="passWord" placeholder="请输入密码">
+                        <span></span>
+                        <label for="rePassWord"   style="color: #fff;"></label>
+                        <input type="password" id="rePassWord" placeholder="请确认密码">
+                        <span></span>
+                   
+                     <button>登录</button>
+                </form>
+ 
+            </div>
+        </div>
+    </div>
+<script    src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>      
+   
+</body>
+</html>
+<script src="dist/login.js"></script>
+<script>
+    window.onload=function(e) {
+        var form = document.querySelector('form');
+        var userName = document.querySelector('#userName');
+        var passWord = document.querySelector('#passWord');
+        var rePassWord = document.querySelector('#rePassWord');
+        var span=document.querySelectorAll('span');
+        //onsubmit事件
+        form.onsubmit = function (e) {
+            var username = checkUserName();
+            if (!username) {
+                return false;
+            }
+            var password = checkPassWord();
+            if (!password) {
+                return false;
+            }
+            var rePassWord = checkRePassWord();
+            if (!rePassWord) {
+                return false;
+            }
+       
+            return true;
+        };
+
+        //onblur失去焦点事件
+        userName.onblur = function (e) {
+            checkUserName();
+        };
+        passWord.onblur = function (e) {
+            checkPassWord();
+        };
+        rePassWord.onblur = function (e) {
+            checkRePassWord();
+        };
+
+
+        //通行证用户名
+        function checkUserName(e) {
+            if (userName.value.length == 0) {
+                span[0].innerText = ' ';
+                span[0].className = 'danger';
+                return false;
+            }
+            var pattern = /^1[34578]\d{9}$/;
+            if (!pattern.test(userName.value)) {
+                span[0].innerText = ' ';
+                span[0].className = 'danger';
+                return false;
+            }
+            span[0].innerText = ' ';
+            span[0].className = 'success';
+            return true;
+        }
+
+
+        //登录密码
+        function checkPassWord(e) {
+            if (passWord.value.length == 0) {
+                span[1].innerText = ' ';
+                span[1].className = 'danger';
+                return false;
+            }
+            var pattern = /^[A-Za-z0-9]{6,16}$/;
+            if (!pattern.test(passWord.value)) {
+                span[1].innerText = ' ';
+                span[1].className = 'danger';
+                return false;
+            }
+            span[1].innerText = ' ';
+            span[1].className = 'success';
+            return true;
+        }
+
+
+        //重复登录密码
+        function checkRePassWord(e) {
+            if (rePassWord.value.length == 0) {
+                span[2].innerText = ' ';
+                span[2].className = 'danger';
+                return false;
+            }
+            if (rePassWord.value != passWord.value) {
+                span[2].innerText = ' ';
+                span[2].className = 'danger';
+                return false;
+            }
+            span[2].innerText = ' ';
+            span[2].className = 'success';
+            return true;
+        }
+
+    }
+</script>
+

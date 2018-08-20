@@ -1,0 +1,207 @@
+.excel{
+    flex:1;
+    // width:1097px;margin-eft:240px;
+    // height: 1050px;
+    overflow:hidden;
+    background: #3a4144;
+    .set{
+        height:58px;
+        background: #424b4f;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 40px 0;
+        border-bottom: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        .set-left{
+            // width: 75%;
+            padding-left: 10px;
+            padding-right: 10px;   
+           .set-head{
+                  float:left;
+                .seting-excel{
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: #fff;
+                        .iconfont{
+                            padding-right: 4px;
+                        }
+                }
+            .ui{
+                font-weight: normal;
+                line-height: 1;
+                color: #B3B3B3;
+                font-size:80%;
+            }
+            .use{
+                color: #e6e6e6;
+                margin-top: 4px;
+                margin-bottom: 0;
+                font-size: 14px;
+            }
+        }
+      }
+       .set-right{
+           float:right;
+           padding-left: 10px;
+           padding-right: 10px;
+        //    width: 25%;
+           .seting{
+               transition: all 0.4s ease-in-out;
+               opacity: 0.3;
+               float: right;
+               outline: none;
+               border: 1px solid #fff;
+               padding: 16px 36px;
+               font-size: 23px;
+               line-height: 23px;
+               border-radius: 0;
+               padding-top: 14px;
+               color: #fff;
+               background-color: rgba(0, 0, 0, 0);
+               font-weight: 500;
+               vertical-align: middle;
+               .iconfont{
+                   padding-right: 6px;
+               }
+               &:hover{
+                background-color: #ffffff;
+                color: #333;
+                opacity: 1;
+               }
+           }
+       }
+    }
+    .list{
+        width: 100%;
+        // min-height: 148px;
+        margin-bottom: 20px;
+        border-radius: 0;
+        // position: relative;
+    }
+    .set-excel{
+        width:50%;
+        padding: 20px 5px;
+        box-sizing: border-box;
+        float:left;
+        .excel-row{
+            margin-right: -7px;
+            margin-left: -10px;
+            overflow: hidden;
+            .row-one{
+                padding-left: 10px;
+                padding-right: 10px;            
+                .active-excel{
+                    border: 1px solid #33393c;
+                    border-top: 2px solid #313639;
+                    background: #4b5357;
+                    color: #ffffff;
+                    .list-head{
+                        border-bottom: 1px solid #3f4649;
+                        width: 100%;
+                        padding: 15px;
+                        .title{
+                            font-size: 14px;
+                            color: #ffffff;
+                            .iconfont{
+                                float: right;
+                                padding-right: 26px;
+                            }
+                        }
+                    }
+                    .list-body{
+                        padding: 13px 0;
+                        width: 100%;
+                        .list-scroll{
+                            width: 100%;
+                            overflow-y: hidden;
+                            overflow-x: auto;
+                            box-sizing: border-box;
+                            color: #ffffff;
+                            table{
+                                background-color: transparent;
+                                empty-cells: show;
+                                white-space: nowrap;
+                                border-collapse:collapse;
+                                thead{
+                                    color: #fff;
+                                    tr{
+                                        th{
+                                            font-size: 14px;
+                                            padding: 6px;
+                                            line-height: 1.6;
+                                            text-align:left;
+
+                                        }
+                                       
+                                    }
+                                }
+                                tbody{
+                                    tr{
+                                        border-top:1px solid #666d70;
+                                        td{
+                                            font-size: 12px;
+                                            padding: 7px 6px;
+                                            border-top: 1px solid #666d70;
+                                            box-sizing: border-box;
+                                            display: table-cell;
+                                        }
+                                        .gradeX{
+                                            color: #fff;
+                                            white-space: nowrap;
+                                         
+                                        }
+                                        .btn{
+                                            box-sizing: border-box;
+                                            font-size: 14px;
+                                            .btnss{
+                                                display: inline-block;
+                                                padding: 5px 6px;
+                                                font-size: 12px;
+                                                line-height: 12px;
+                                                text-decoration: none;
+                                                background-color: transparent;
+                                                cursor:pointer;
+                                                border: 1px solid #7b878d;
+                                                color: #7b878d;
+                                            }
+                                            .btns{
+                                                border: 1px solid #f35842;
+                                                color: #f35842;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }   
+            }
+        }  
+    }
+}
+//响应式媒体查询
+@media screen and (max-width:980px){
+   .excel{
+       margin-left:0;
+   };
+   .header .right
+   {
+    clear:both;
+   }
+   .common{
+    display: none;
+   }
+}
+@media screen and (max-width:640px){
+    .set-excel{
+        width:100%;
+        clear:both;
+    }
+    .excel-row{
+        width: 214%;
+    }
+ }
+
+

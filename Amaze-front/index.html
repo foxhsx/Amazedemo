@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>amaze首页</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="header">
+		<div class="left">
+			<a href="./index.html"><img src="img/logo.png" alt=""></a>
+		</div>
+		<div class="right">
+            <div class="l">
+                <div class="list-button"><i class="iconfont icon-cebianlan"></i></div>
+                <div class="search-box">
+                    <form action="javascript:;">
+                        <button><i class="iconfont icon-fangdajing"></i></button>
+                        <input type="text" placeholder="搜索内容...">
+                    </form>
+                </div>
+            </div>
+			<div class="navbar">
+				<ul>
+					<li><a href="javascript:;">欢迎你，Amaze UI</a></li>
+					<li><a href="javascript:;"><i class="iconfont icon-youjian"></i></a></li>
+					<li><a href="javascript:;"><i class="iconfont icon-xiaoxi"></i></a></li>
+					<li><a href="javascript:;"><i class="iconfont icon-tuichu"></i>退出</a></li>
+				</ul>
+			</div>
+		</div>
+    </div>
+    <div class="section">
+        <div class="common">
+            <div class="use-panel">
+                <div class="use-content">
+                    <div class="picture">
+                        <img src="img/user1.png" alt="">
+                    </div>
+                    <p class="p1"><span><i class="iconfont icon-weixuanzhongyuanquan"></i></span>禁言小张</p>
+                    <a href="javascript:;"><i class="iconfont icon-bianji"></i>账号设置</a>
+                </div>
+            </div>
+            <ul class="total">
+                <li class="first">Components <span>附加组件</span></li>
+                <li class="index"><a href="javascript:;"><i class="iconfont icon-home"></i>首页</a></li>
+                <li><a href="./excel.html"><i class="iconfont icon-biaoge"></i>表格</a></li>
+                <li><a href="./canlender.html"><i class="iconfont icon-calender"></i>日历</a></li>
+                <li><a href="biaodan.html"><i class="iconfont icon-biaodan"></i>表单</a></li>
+                <li><a href="./chart.html"><i class="iconfont icon-tuichu"></i>图表</a></li>
+                <li class="first">Page <span>常用页面</span></li>
+                <li class="toggle"><a href="javascript:;"><i class="iconfont icon-biaoge"></i>数据列表<span class="down"><i class="iconfont icon-xiangxiajiantou"></i></span></a></li>
+                <div class="hide hide1">
+                    <li><a href="./tuwen.html"><i class="iconfont icon-msnui-reg"></i>图文</a></li>
+                    <li ><a href="./wenzi.html"><i class="iconfont icon-msnui-reg"></i>文字</a></li>
+                </div>
+                <li><a href="./register.html"><i class="iconfont icon-msnui-reg"></i>注册</a></li>
+                <li><a href="./login.html"><i class="iconfont icon-xiugaidenglumima"></i>登录</a></li>
+                <li><a href="javascript:;"><i class="iconfont icon-tuichu"></i>404错误</a></li>
+            </ul>
+        </div>
+        <div class="wrap">
+            <div class="set">
+                <div class="left">
+                    <div class="heading">
+                        <span><i class="iconfont icon-home"></i></span>
+                        部件首页
+                        <em>Amaze UI</em>
+                    </div>
+                    <p class="describe">
+                        Amaze UI 含近 20 个 CSS 组件、20 余 JS 组件，更有多个包含不同主题的 Web 组件。
+                    </p>
+                </div>
+                <div class="right">
+                    <button>
+                        <span><i class="iconfont icon-bianji"></i></span>
+                        设置
+                    </button>
+                    <div class="setbtn"><i class="iconfont icon-shezhi"></i></div>
+                </div>
+            </div>
+            <div class="wrap-content">
+                <div class="show">
+                    <div class="child pay">
+                        <div class="child-content">
+                            <div class="top">
+                                <div class="l">月度财务收支计划</div>
+                                <div class="r"><i class="iconfont icon-shezhi"></i></div>
+                            </div>
+                            <div class="bottom">
+                                <div class="l">
+                                    ￥61746.45
+                                    <button>
+                                        <i class="iconfont icon-calender"></i>
+                                        更多月份
+                                    </button>
+                                </div>
+                                <div class="r">
+                                    <div class="p1">+￥30420.56</div>
+                                    <div class="p2">8月份收入</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="child profit">
+                        <div class="child-content">
+                            <p class="title">本季度利润</p>
+                            <div class="price">
+                                ￥27,294
+                            </div>
+                            <p class="more">本季度比去年多收入 2593元 人民币</p>
+                        </div>
+                    </div>
+                    <div class="child earn">
+                        <div class="child-content">
+                            <p class="title">本季度利润</p>
+                            <div class="price">
+                                ￥27,294
+                            </div>
+                            <p class="more">本季度比去年多收入 2593元 人民币</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="infor">
+                <div class="left">
+                    <div class="title">
+                        <div class="l">月度财务收支计划</div>
+                        <div class="r"><i class="iconfont icon-shezhi"></i></div>
+                    </div>
+                    <div class="table" id="main" width="100%" height="174"></div>
+                </div>
+                <div class="right">
+                    <div class="title">
+                        <div class="l">专用服务器负载</div>
+                        <div class="r"> <span><i class="iconfont icon-bianji"></i></span></div>
+                    </div>
+                    <div class="cpu">
+                        <div class="sign">CPU Load <span>28% / 100%</span></div>
+                        <div class="all">
+                            <div class="percent first"></div>
+                        </div>
+                        <div class="sign">CPU Load <span>28% / 100%</span></div>
+                        <div class="all">
+                            <div class="percent second"></div>
+                        </div>
+                        <div class="sign">CPU Load <span>28% / 100%</span></div>
+                        <div class="all">
+                            <div class="percent third"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="last">
+                <div class="left">
+                    <div class="content">
+                        <p class="title">禁言小张</p>
+                        <p class="best">月度最佳员工</p>
+                        <img src="img/user2.png" alt="">
+                        <div class="disbody">禁言小张在 30天内 禁言了 200多人。</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="content">
+                        <table class="am-table an-text-norwap tpl-table-black ">
+                            <thead>
+                                <tr>
+                                    <th class="t1">文章标题<span><i class="iconfont icon-az"></i></span></th>
+                                    <th class="t2">作者<span><i class="iconfont zhcc_xiangxiajiantou"></i></span></th>
+                                    <th class="t3">时间<span><i class="iconfont 设置"></i></span></th>
+                                    <th class="t4">操作<span><i class="iconfont "></i></span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="gradeX">
+                                    <td>自拍的“政治角色”：观众背对希拉里自拍合影表示“支持”</td>
+                                    <td class="first">天纵之人</td>
+                                    <td class="second">2016-09-26</td>
+                                    <td class="third">
+                                        <div class="btn">
+                                            <a href="javascript:;" class="btnss">编辑</a>
+                                            <a href="javascript:;" class="btnss btns">删除</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>究竟是趋势带动投资，还是投资引领趋势？</td>
+                                    <td>着迷</td>
+                                    <td>2016-09-26</td>
+                                    <td>
+                                        <div class="btn">
+                                            <a href="javascript:;" class="btnss">编辑</a>
+                                            <a href="javascript:;" class="btnss btns">删除</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>新加坡大数据初创公司 Latize 获 150 万美元风险融资</td>
+                                    <td>张鹏飞</td>
+                                    <td>2016-09-26</td>
+                                    <td>
+                                        <div class="btn">
+                                            <a href="javascript:;" class="btnss">编辑</a>
+                                            <a href="javascript:;" class="btnss btns">删除</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>关于创新管理，我想和你当面聊聊。</td>
+                                    <td>王宽师</td>
+                                    <td>2016-09-26</td>
+                                    <td>
+                                        <div class="btn">
+                                            <a href="javascript:;" class="btnss">编辑</a>
+                                            <a href="javascript:;" class="btnss btns">删除</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Docker领域再添一员，网易云发布“蜂巢”</td>
+                                    <td>醉里挑灯看键</td>
+                                    <td>2016-09-26</td>
+                                    <td>
+                                        <div class="btn">
+                                            <a href="javascript:;" class="btnss">编辑</a>
+                                            <a href="javascript:;" class="btnss btns">删除</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>     
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+    <script src="dist/index.js"></script>
+    <script src="dist/bundle1.js"></script>
+</body>
+</html>

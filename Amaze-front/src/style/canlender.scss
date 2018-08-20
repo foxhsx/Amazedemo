@@ -1,0 +1,86 @@
+.canlender{
+    background: #3a4144;
+    flex:1;
+    .wrap{
+        float: right;
+        // padding:20px;
+        width: 100%;
+        box-sizing: border-box;
+        .wrap-center{
+            background: #424b4f;
+            // padding: 20px;
+            box-sizing: border-box;
+            line-height: 40px;
+            overflow: hidden;
+            .title{
+                overflow:hidden;
+            }
+         .fc-left{
+            float: left;
+            width:40%;
+          }
+          .fc-center{
+            width:40%;
+            float: left;
+            h2{
+                color: #fff;
+                font-weight: 600;
+            }
+          }
+          .fc-right{
+              text-align: right;
+            width:20%;
+              float:right;
+              button{
+                  display: inline-block;
+                  margin-top:-2px;
+              }
+              span{
+                  position: fixed;
+                  right: 0;
+                  top:48px;
+                  color: rgb(150,154,155);
+                  padding: 2px 12px;
+                  background: rgb(20,22,23);
+              }
+          }
+          .content{
+              thead{
+              tr{
+                  background:#9675ce; 
+              .fc-day-header{
+                        background: #9675ce!important;
+                        color: #ffffff;
+                        font-size: 14px;
+                        line-height: 20px;
+                        padding: 7px 0px;
+                        text-transform: uppercase;
+                        border: none!important;
+                        font-weight: normal;
+                        text-align: center;
+                        width:149px;
+                        // float:left;
+              }
+            }
+        }
+          tbody{
+             tr{
+                 height:119px;
+                 td{
+                     width:149px;
+                     border:1px solid;
+                     border-color: rgba(120, 130, 140, 0.4) !important;
+                     //  border-top:none;
+                     border-right:none;
+                     border-bottom:none;
+                     text-align:right;
+                     vertical-align: top;
+                     color: #868E8E;
+                     padding-right: 6px;
+                 }
+             }
+           }
+          }
+        }
+    }
+}

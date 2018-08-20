@@ -1,0 +1,57 @@
+<html>  
+    <head>  
+        <base href="<%=basePath%>">
+        <title>ECharts-环形图</title> 
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                background:rgb(25,25,24);
+            }
+            .box{
+                float:left;
+                overflow: hidden;
+            }
+          .box1,.box2{
+              width:183px;
+              height:106px;
+              background:rgb(36,39,62);
+          }
+          .box1{
+              float:left;
+              margin-right:10px;
+          }
+          .box2{
+            float:left;
+          }
+          .box3{
+              width:427px;
+              height:400px;
+          }
+          .box4{
+              width:400px;
+              height:400px;
+          }
+          .box5{
+              width:500px;
+              height:300px;
+              /* background:red; */
+              float:left;
+          }
+        </style> 
+    </head>  
+    <body>
+        <div class="box">
+                <div class="box1" id="main1"></div>
+                <div class="box2" id="main2"></div>  
+                <div class="box3" id="main3"></div>
+                <div class="box4" id="main4"></div>
+                
+      </div> 
+    <div class="box5" id="main5"></div>
+    </body>
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+    <script src="dist/homework.js"></script> 
+</html>  

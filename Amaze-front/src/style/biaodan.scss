@@ -1,0 +1,259 @@
+
+.tpl-content-wrapper{
+    background: #3a4144;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    // margin-left: 240px;
+    flex:1;
+    z-index: 1101;
+    min-height: 922px;
+    border-bottom-left-radius: 3px;
+            .container-fluid{
+                background: #424b4f;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding: 40px 0;
+                border-bottom: 0;
+                height: 54px;
+                padding-left: 20px;
+                padding-right: 20px;
+                    .row{
+                        margin-right: -10px;
+                        margin-left: 0px;
+                        
+                        .rows{
+                            width: 75%;
+                            float: left;
+                            .page-header-heading{
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: #fff;
+                                    small{
+                                font-size: 80%;
+                                color: #a8b3a9;
+                            }
+                            
+                        }
+                            .page-header-description{
+                                color: #e6e6e6;
+                                margin-top: 4px;
+                                margin-bottom: 0;
+                                font-size: 14px;
+                            }
+                        }
+                        .rowl{
+                            width: 25%;
+                            float: right;
+                            .page-header-button {
+                                transition: all 0.4s ease-in-out;
+                                opacity: 0.3;
+                                float: right;
+                                outline: none;
+                                border: 1px solid #fff;
+                                padding: 16px 36px;
+                                font-size: 23px;
+                                line-height: 23px;
+                                border-radius: 0;
+                                padding-top: 14px;
+                                color: #fff;
+                                background-color: rgba(0, 0, 0, 0);
+                                font-weight: 500;
+                            }
+                            .page-header-button:hover {
+                                background-color: #ffffff;
+                                color: #333;
+                                opacity: 1;
+                            }
+                    }
+                }
+                
+              }
+              .row-content{
+                  padding:20px;
+                  .row{
+                      margin-right: -10px;
+                      margin-left: -10px;
+                      .widget{
+                        border: 1px solid #33393c;
+                        border-top: 2px solid #313639;
+                        background: #4b5357;
+                        color: #ffffff;
+                        width: 100%;
+                        min-height: 148px;
+                        margin-bottom: 20px;
+                        border-radius: 0;
+                        position: relative;
+                        overflow: hidden;
+                          .widget-head{
+                            border-bottom: 1px solid #3f4649;
+                            width: 100%;
+                            padding: 24px;
+                            .widget-title{
+                                font-size: 14px;
+                                line-height: 0;
+                            }
+                            .am-fl{
+                                float: left;
+                            }
+                          }
+                          .widget-body{
+                            padding: 13px 15px;
+                            width: 100%;
+                            .tpl-form-line-form{
+                                padding-top: 20px;
+                                .am-form-group{
+                                    margin-bottom: 1.5rem;
+                                    display: block;
+                                    overflow: hidden;
+                                    .am-form-label {
+                                        padding-top: 5px;
+                                        font-size: 16px;
+                                        color: #fff;
+                                        font-weight: inherit;
+                                        padding-left: 162px;
+                                        text-align: right;
+                                        .tpl-form-line-small-title{
+                                            color: #999;
+                                            font-size: 12px;
+                                        }
+                                    }
+                                    .am-u-sm-9{
+                                        width: 75%;
+                                        float: right;
+                                        .tpl-form-input{
+                                            display: block;
+                                            width: 100%;
+                                            padding: 6px 12px;
+                                            line-height: 1.42857;
+                                            background-color: #4b5357;
+                                            border: 0;
+                                            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                                            border-radius: 0;
+                                            color: #fff;
+                                            box-shadow: none;
+                                            padding-left: 0;
+                                            padding-right: 0;
+                                            font-size: 14px;
+                                         }
+                                         small{
+                                             font-size: 80%;
+                                         }
+                                         .am-selected{
+                                             width: 200px;
+                                         }
+                                         .am-dropdown{
+                                            position: relative;
+                                            display: inline-block;
+                                            border: 1px solid #657075;
+                                            line-height: 2.5;
+                                            .am-btn-default{
+                                                color: #fff;
+                                                border: 0px solid rgba(255, 255, 255, 0.2);
+                                                background: 0,0;
+                                            }
+                                            .am-selected-btn{
+                                                width: 100%;
+                                                padding-left: 10px;
+                                                text-align: right;
+                                            }
+                                            .am-btn{
+                                                display: inline-block;
+                                                margin-bottom: 0;
+                                                padding: .5em 1em;
+                                                vertical-align: middle;
+                                                font-size: 20px;
+                                                font-weight: 400;
+                                                white-space: nowrap;
+                                                border-radius: 0;
+                                                cursor: pointer;
+                                                outline: 0;
+                                                -webkit-appearance: none;
+                                                user-select: none;
+                                                transition: background-color .3s ease-out,border-color .3s ease-out;
+                                                .am-selected-status{
+                                                    text-align: left;
+                                                    width: 100%;
+                                                    display: block;
+                                                    word-wrap: normal;
+                                                    text-overflow: ellipsis;
+                                                    white-space: nowrap;
+                                                    overflow: hidden;
+                                                }
+                                            }
+                                         }
+                                         .am-btn-sm{
+                                             font-size: 14px;
+                                         }
+                                         .am-btn-danger {
+                                            color: #fff;
+                                            background-color: #dd514c;
+                                            border-color: #dd514c;
+                                        }
+                                        .am-btn{
+                                            display: inline-block;
+                                            margin-bottom: 0;
+                                            padding: .5em 1em;
+                                            vertical-align: middle;
+                                            font-weight: 400;
+                                            line-height: 1.2;
+                                            text-align: center;
+                                            white-space: nowrap;
+                                            background-image: none;
+                                            border: 1px solid transparent;
+                                            border-radius: 0;
+                                            cursor: pointer;
+                                            outline: 0;
+                                            user-select: none;
+                                            transition: background-color .3s ease-out,border-color .3s ease-o
+                                        }
+                                        .zm{
+                                         width: 50px;
+                                         height:22px;
+                                         border-radius: 10px;
+                                         background: skyblue;
+                                     }
+                                     .am-btn-primary {
+                                        color: #fff;
+                                        background-color: #0e90d2;
+                                        border-color: #0e90d2;
+                                    }
+                                    .am-btn {
+                                        display: inline-block;
+                                        margin-bottom: 0;
+                                        padding: .5em 1em;
+                                        vertical-align: middle;
+                                        font-size: 1.6rem;
+                                        font-weight: 400;
+                                        line-height: 1.2;
+                                        text-align: center;
+                                        white-space: nowrap;
+                                        background-image: none;
+                                        border: 1px solid transparent;
+                                        border-radius: 0;
+                                        cursor: pointer;
+                                        outline: 0;
+                                        transition: background-color .3s ease-out,border-color .3s ease-out;
+                                    }
+                                     }
+                                     
+                                    }
+                                }
+                            }
+                          }
+                          .am-fr{
+                              float: right;
+                          }
+                      }
+                  }
+              }
+              @media screen and (max-width:992px){
+                .common{
+                    display:none;
+                }
+                .tpl-content-wrapper{
+                    margin: 0 auto;
+                    width: 100%;
+                }
+            }
+                    
+                   
